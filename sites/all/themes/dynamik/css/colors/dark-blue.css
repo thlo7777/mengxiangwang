@@ -1,0 +1,30 @@
+/*Body*/
+.container a {color: #005dcc;}
+.container a:hover {color: #0474ff;}
+
+/*Forum*/
+thead {background-color: #005dcc; color: white; }
+
+/*Front Page*/
+.unit_title, .panel_title {color: #005dcc;}
+
+/*Elastic Slider*/
+.ei-slider-thumbs li a {background: #005dcc;}
+
+/*Widgets*/
+.ad_block a:hover, .view-popular-tags a:hover {background-color: #005dcc;}
+
+/*Pricing*/
+.pricehover:hover .price {background:#005dcc; border-color: #005dcc;}
+.price.featuredprice {background-color: #005dcc; border: 3px solid #005dcc;}
+
+/*Node*/
+.node_title {background-color: #005dcc;}
+.node_title a {color: #FFF;}
+.contact_number {color: #005dcc;}
+.triangle {border-color: transparent #0474ff transparent transparent;}
+
+/*Menu*/
+#main-menu {background-color: #005dcc;}
+.menu-triangle-l {border-color: transparent #0474ff transparent transparent;}
+.menu-triangle-r {border-color: transparent transparent transparent #0474ff;}

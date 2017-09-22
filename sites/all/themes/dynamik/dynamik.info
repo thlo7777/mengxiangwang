@@ -1,0 +1,103 @@
+name = Dynamik
+description = A Responsive Drupal Theme. 
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = /css/sliders/elastic-image.css
+stylesheets[all][] = /css/sliders/nivo.css
+stylesheets[all][] = css/ie.css
+scripts[] = js/jquery.js
+scripts[] = js/easing.js
+scripts[] = bootstrap/js/bootstrap.js
+scripts[] = js/superfish.js
+scripts[] = js/hoverIntent.js
+scripts[] = js/mobile-menu.js
+scripts[] = js/dynamik.js
+scripts[] = js/jquery.ui.totop.js
+scripts[] = js/jquery.tweet.js
+scripts[] = js/jquery.quote_rotator.js
+scripts[] = js/mobile-map.js
+scripts[] = js/jquery.nivo.slider.js
+scripts[] = js/jquery.eislideshow.js
+
+
+regions[front_page]     = Front Page
+regions[content]        = Content
+regions[sidebar_first]  = First Sidebar
+regions[sidebar_second] = Second Sidebar
+
+regions[panel_1]        = Panel 1
+regions[panel_2]        = Panel 2
+regions[panel_3]        = Panel 3
+regions[panel_4]        = Panel 4
+
+regions[footer_1]       = Footer Box 1
+regions[footer_2]       = Footer Box 2
+regions[footer_3]       = Footer Box 3
+regions[footer_4]       = Footer Box 4
+
+settings[breadcrumbs] = '1'
+
+settings[branding_type] = 'text'
+
+settings[slider_type] = 'default'
+
+settings[enable_panel] = '1'
+settings[panel_text] = 'Enter your text here'
+
+settings[enable_menu] = '1'
+
+settings[enable_contact] = '1'
+settings[contact_text] = 'Call Us: 1-888-888-8888'
+
+settings[twitter_icon] = '1'
+settings[facebook_icon] = '1'
+settings[rss_icon] = '1'
+settings[google_plus_icon] = '1'
+settings[pinterest_icon] = '0'
+settings[linkedin_icon] = '0'
+settings[flickr_icon] = '0'
+settings[youtube_icon] = '0'
+
+settings[twitter_url] = 'http://twitter.com'
+settings[facebook_url] = 'http://facebook.com'
+settings[google_plus_url] = 'http://plus.google.com'
+settings[pinterest_url] = 'http://pinterest.com'
+settings[linkedin_url] = 'http://linkedin.com'
+settings[flickr_url] = 'http://flickr.com'
+settings[youtube_url] = 'http://youtube.com'
+
+settings[enable_panels] = '1'
+
+settings[enable_highlight] = '1'
+settings[highlight_title] = 'Use this to advertise something on your site'
+settings[highlight_text] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+settings[highlight_button_text] = 'Click Me'
+settings[highlight_button_link] = ''
+
+settings[color_scheme] = 'blue'
+
+settings[background_select] = 'nistri'
+
+settings[page_layout] = 'full_width'
+settings[blog_layout] = 'sidebar_right'
+
+settings['font_family'] = 'Open Sans, serif'
+
+settings[h1] = '36px'
+settings[h2] = '30px'
+settings[h3] = '24px'
+settings[h4] = '18px'
+settings[h5] = '14px'
+settings[h6] = '12px'
+
+settings[enable_slider] = '0'
+settings[slides_number] = '3'
+settings[slide_caption_1] = 'This is slide caption 1'
+settings[slide_caption_2] = 'This is slide caption 2'
+settings[slide_caption_3] = 'This is slide caption 3'
+
+settings[enable_primary_footer] = '1'
+settings[enable_secondary_footer] = '1'
+settings[secondary_footer_left] = 'Design by <a href="http://refaktor.co" target="_blank">WEBurner.com</a>'
+settings[secondary_footer_right] = '&copy; Copyright 2012'

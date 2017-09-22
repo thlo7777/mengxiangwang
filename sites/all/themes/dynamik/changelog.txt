@@ -1,0 +1,34 @@
+===Dynamik Changelog===
+
+1.1.3 (01/27/13)
+	*Fixed bugs caused by bad git merge in previous update.
+
+1.1.2 (01/26/13)
+	*Updated to Bootstrap 2.2.2.
+	*Fixed minor bug with breadcrumbs function.
+	*Fixed unidentified index bug in several templates related to $field_tag variable.
+  *Fixed RSS validation bug caused by whitespace in template files.
+  *Added custom template for blog content type.
+  *Fixed theme setting bug on front page.
+
+1.1.1 (11/26/12)
+  *Fixed some bugs with iPad portrait layout.
+
+1.1 (11/14/12)
+  *Updated to Bootstrap 2.2.1.
+  *New widgets including Twitter feed, popular tags, FAQ accordion and pricing table.
+  *Social sharing icons for blog posts.
+  *5 new color schemes, 5 new background options.
+  *New image slider options: NivoSlider and Elastic Image Slider.
+  *New layout options.
+  *Updated documentation.
+  *Fix for IE HTML comment bug causing layout issues.
+  *General bug fixes, code cleanup and style tweaks.
+
+1.0.1 (10/26/12)
+  *Updated to Bootstrap 2.1.1.
+  *Minor style tweaks.
+  *Removed some unused resources.
+
+1.0 (10/01/12)
+  *Initial release.

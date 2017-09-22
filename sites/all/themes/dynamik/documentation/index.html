@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamik Documentation</title>
+<link href="http://fonts.googleapis.com/css?family=Voces" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="style.css"/>
+<script src="jquery.js"></script>
+<script src="toc.js"></script>
+</head>
+<body>
+<div id="toc">
+	
+</div>
+
+
+<div id="wrapper">
+<h2>Overview</h2>
+<p>A responsive Drupal 7 theme powered by Twitter Bootstrap. Dynamik features a fully responsive design, easy to use theme options and follows Drupal coding standards. For theme support that cannot be found in this documentation, please contact me via the <a href="http://themeforest.net/user/refaktor" target="_blank">ThemeForest author page</a>.</p>
+<p>Updated: 11/14/12<br>Author: <a href="http://refaktor.co" target="_blank">Refaktor</a><br>Email: <a href="mailto:refaktor.co@gmail.com">refaktor.co@gmail.com</a><br>Docs powered by: <a href="https://github.com/jgallen23/toc" target="_blank">TOC</a></p>
+<h2>Installation</h2>
+Option 1:
+<ul>
+  <li>Visit yourdomain.com/admin/appearance/install</li>
+  <li>Upload the dynamik.zip file</li>
+  <li>Enable and set to default</li>
+</ul>
+Option 2:
+<ul>
+  <li>Extract the dynamik.zip file and upload via FTP to /sites/all/themes</li>
+  <li>Visit yourdomain.com/admin/appearance/</li>
+  <li>Scroll down to "DISABLED THEMES" and set and enable Dynamik</li>
+</ul>
+  
+<h2>Menu</h2>
+<p>To edit your menu visit yourdomain.com/admin/structure/menu (pictured below)</p>
+<img src="images/menu-1.png">
+<p>Dynamik uses the Main Menu. Press "List Links" to access the menu overview. From there you can add/remove links, and set the order.</p>
+<b>NOTE:</b> If you would like to use Dynamik's built in drop down menu capability, make sure that the parent menu item (the one that indicates the drop down) has the "show as expanded" checkbox enabled. 
+<img src="images/menu-2.png">
+<h2>Theme Settings</h2>
+<p>Dynamik includes a powerful set of theme settings that allow you to configure many aspects of your site. They are organized in a series of tabbed menu items each with their own set of options. Simply click on the option heading to expand the full set of options. The Dynamik theme options can be accessed by visiting yourdomain.com/admin/appearance/settings/dynamik. All options have default values set, but you should go through each one and adjust them to your liking.</p>
+<img src="images/settings-1.png">
+<h2>Header</h2>
+<img src="images/header.png">
+<p>The Dynamik header area allows you to convey a lot of important information to your site's visitors. You can upload your own custom logo, or simply display your site's title and description. You can add a contact phone number or email address, and display any of the following social icons and your social links: Facebook, Twitter, YouTube, Google +, LinkedIn, Vimeo, Pinterest and an RSS feed.
+	
+To customize your header, visit the theme settings at yourdomain.com/admin/appearance/settings/dynamik and click on the Header tab. From there you can click on any of the options headings and configure each header area to your liking.
+</p>
+<h2>Front Page</h2>
+<p>By default Dynamik uses a custom front page template that features several custom sections including the image slider. All of these sections are fully customizable and can also be disabled. You also have the option to use the standard Drupal homepage by selecting it from the "Select your Front Page template" option. </p>
+<h3>Image Slider</h3>
+<img src="images/slider.png">
+<p>
+Dynamik's image slider allows you to upload an image, text caption (can include HTML) and a link for each slide. To enable the slider, visit the Front Page settings tab, click on the Image Slider heading, and check off the "enable image slider" checkbox. Next, chose from either the Elastic Image slider, Nivo slider or Twitter Bootstrap slider. From there, select the number of slides you want to use, and a set of options for each slide will be available. Upload your image, apply your optional caption and/or URL, and save your settings. Your images should be 1170 by 390 for optimal display. </p>
+<h3>Panels</h3>
+<p>The panels section is a block region with 4 unique "panels". You can add any type of block you would like to the panels, but if you would like to mimic the default Dynamik panels, you can use the following HTML layout inside your block (be sure to set the block to use the full HTML text format).</p>
+<pre>
+&lt;div class=&quot;panel_icon&quot;&gt;
+  &lt;img src=&quot;/drupal/sites/all/themes/dynamik_premium/images/colors.png&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel_text&quot;&gt;
+  &lt;h3 class=&quot;panel_title&quot;&gt;Theme Options&lt;/h3&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor
+&lt;/div&gt;
+</pre>
+<h3>Highlight</h3>
+<img src="images/highlight.png">
+<p>The Highlight section allows you to advertise a specific page or aspect of your site. The settings for the Highlight section are in the Front Page tab of the theme settings. You can enter your own title, text, button text and button URL.</p>
+<h3>Front Page Region</h3>
+<p>There is a block region called Front Page that can be used to display any block content you wish. If you want to display your recent blog posts as seen on our <a href="http://refaktor.co/dynamik_demo/" target="_blank">demo</a>, you can use the <a href="http://drupal.org/project/views" target="_blank">Views module</a> to display your post recent posts. Dynamik uses a custom view template to achieve the view seen on our demo, so you have to call the view Front Page Blog to make sure the template is properly displayed. See the image below for how the view is set up on the demo.
+</p>
+<img src="images/front-page-blog.png">
+<h2>Footer</h2>
+<p>There are two areas in the Dynamik footer: the main footer (a block region) and a secondary footer which can be used to display copyright information. There are 4 regions inside the main footer, and blocks can be added to them like any other region. You can also choose to not display the footer by disabling it in the Footer theme settings. To configure the secondary footer, also visit the Footer theme settings where you can disable the secondary footer, or enter your own information into the left and right portion of secondary footer (supports HTML).
+<h2>Widgets</h2>
+<p>dynamik includes styling and code for several widgets such as the accordion, Twitter feed and quote rotator. See below for the necessary markup to use each kind of widget in a block or page</p>
+<h4>Twitter</h4>
+<pre>&lt;div class='tweet query'&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+                        
+    jQuery(document).ready(function ($) {
+      
+      $(&quot;.tweet&quot;).tweet({
+        username: &quot;envato&quot;,
+        avatar_size: 34,
+        count: 3,
+        loading_text: &quot;loading tweets...&quot;
+      });
+    
+    });
+    
+  &lt;/script&gt;</pre>
+<h4>Accordion</h4>
+<pre>&lt;ul class=&quot;accordion&quot;&gt;
+  &lt;li class=&quot;divider&quot;&gt;&lt;h2 class=&quot;accordion-head title-color gdl-title&quot;&gt;&lt;span class=&quot;accordion-head-image active&quot;&gt;&lt;/span&gt;Title&lt;/h2&gt;
+    &lt;div class=&quot;accordion-content&quot;&gt;
+      Accordion Text
+    &lt;/div&gt;
+  &lt;/li&gt;
+    &lt;li class=&quot;divider&quot;&gt;&lt;h2 class=&quot;accordion-head title-color gdl-title&quot;&gt;&lt;span class=&quot;accordion-head-image active&quot;&gt;&lt;/span&gt;Title&lt;/h2&gt;
+    &lt;div class=&quot;accordion-content&quot;&gt;
+      Accordion Text
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<h4>Ad Block</h4>
+<pre>&lt;div class=&quot;ad_block&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;
+&lt;/div&gt;</pre>
+<h4>Quote Rotator</h4>
+<pre>
+&lt;ul id=&quot;quotes&quot;&gt;
+  &lt;li&gt;
+    &lt;p&gt;Quote text goes here&lt;/p&gt;
+    - John Doe
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Here's another quote&lt;/p&gt;
+    - John Doe
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<h4>Pricing</h4>
+<p>dynamik supports 3, 4 and 5 columns of pricing tables. Just change the span class to span5 for 2 columns, span3 for 3 columns and span2 for 5 columns. To make a particular price column featured simply add "featuredprice" to the price div class.</p>
+<pre>&lt;div class=&quot;span5 pricehover&quot;&gt;
+		        &lt;h3&gt;Starter&lt;/h3&gt;
+		        &lt;div class=&quot;price&quot;&gt;&lt;h2&gt;$50.00&lt;/h2&gt;&lt;/div&gt;
+		          &lt;ul class=&quot;unstyled pricing &quot;&gt;
+                    &lt;li&gt;2GB Space&lt;/li&gt;
+		            &lt;li&gt;500MB Data&lt;/li&gt;
+		            &lt;li&gt;1 User&lt;/li&gt;
+		            &lt;li&gt;1 Email&lt;/li&gt;
+		          &lt;/ul&gt;
+		        &lt;button class=&quot;btn &quot; &gt;Buy Now&lt;/button&gt;
+		        &lt;br&gt;&lt;br&gt;
+	          &lt;/div&gt;
+		
+		      &lt;div class=&quot;span5 pricehover &quot;&gt;
+		      &lt;h3&gt;Deluxe&lt;/h3&gt;
+		        &lt;div class=&quot;price&quot;&gt;&lt;h2&gt;$100.00&lt;/h2&gt;&lt;/div&gt;
+		          &lt;ul class=&quot;unstyled pricing&quot;&gt;
+                    &lt;li&gt;5GB Space&lt;/li&gt;
+                    &lt;li&gt;2GB Data&lt;/li&gt;
+		            &lt;li&gt;5 Users&lt;/li&gt;
+		            &lt;li&gt;5 Emails&lt;/li&gt;
+		          &lt;/ul&gt;
+		        &lt;button class=&quot;btn &quot; &gt;Buy Now&lt;/button&gt;
+	            &lt;br&gt;&lt;br&gt;
+	          &lt;/div&gt;</pre>
+
+<h4>Popular Tags</h4>
+Use the <a href="http://drupal.org/project/views" target="_blank">Views module</a> to create a block view titled "Popular Tags" that is an HTML list of the taxonomy term "Tags". You can set the number limit to whatever you like, just make sure to name it "Popular Tags" and to make it an HTML list.
+<h2>Block Regions</h2>
+<img src="images/blocks.png">
+<p>Dynamik features 12 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
+<h2>Thank You</h2>
+<p>Thank you very much for purchasing the Dynamik responsive Drupal 7 theme. Once again if you have any issues or feedback please connect via the <a href="http://themeforest.net/user/refaktor" target="_blank">ThemeForest author page</a>. Enjoy using Dynamik!</p>
+</p>&copy 2012 Refaktor.
+</div>
+<script>$('#toc').toc();</script></body></html>
